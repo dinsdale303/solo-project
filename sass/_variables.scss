@@ -1,10 +1,35 @@
 /* Colors */
-$paragraph-color: #000000;
-$brand-main-color: #ff0000;
+$white1: #FFFFFF;
+$white2: #F5F5F2;
+$black1: #000000;
+$black2: #333333;
+$grey1: #979797;
+$grey2: #BABABA;
+$grey3: #E3E3E3;
+$orange1: #F58220;
+$orange2: #FFA200;
+$green1: #04AE00;
+$green2: #74B67A;
+$green3: #96CC9B;
+$red1: #FF0000;
+$red2: #DE5252;
+$red3: #EC7171;
+$blue1: #56819F;
+$blue2: #80BFCA;
+$magenta1: #E600F4;
+$yellow1: #FFFF00;
+
+$button-text-color: $white1;
+$active-button-color: $orange1;
+$active-button-color-hover: $orange2;
+$inactive-button-color: $grey1;
+$inactive-button-color-hover: $grey3;
+$menu-background-color: $black1;
+$menu-text-color: $grey1;
+$menu-background-color-hover: $black2;
+$menu-text-color-hover: $white1;
 
 /* Font sizes */
-$paragraph-font-size: 16px;
+
 
 /* Fonts */
-$brand-font: "Open Sans", Helvetica, Arial;
-$paragraph-font: "Open Sans", Helvetica, Arial;

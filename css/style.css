@@ -343,8 +343,38 @@ template {
 /* Components */
 /* Sections */
 /* Pages / Views */
-h1 {
-  color: #ff0000;
-  font-size: 16px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li img {
+  width: 15px;
+  height: 15px;
+}
+
+li a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 200px;
+  height: 30px;
+  text-decoration: none;
+  color: #979797;
+  background-color: #000000;
+}
+
+li a:hover {
+  color: #FFFFFF;
+  background-color: #333333;
+}
+
+.menu {
+  background-color: #000000;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
 }
 /*# sourceMappingURL=style.css.map */
