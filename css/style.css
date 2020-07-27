@@ -1,6 +1,16 @@
 /* colors */
 /* font sizes */
 /* fonts */
+@font-face {
+  font-family: 'GlyphterFont';
+  src: url("../fonts/Glyphter.woff") format("woff"), url("../fonts/Glyphter.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'ReklameScript';
+  src: url("../fonts/Reklame_Script_Regular_DEMO.ttf") format("truetype");
+}
+
 /* grid */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -685,7 +695,7 @@ a {
 }
 
 .links-icon, .links-icon1, .links-icon2 {
-  font-family: "Glyphter", sans-serif;
+  font-family: glyphterFont, sans-serif;
   font-size: 14px;
 }
 
@@ -722,7 +732,7 @@ button {
 }
 
 .button-icon {
-  font-family: "Glyphter", sans-serif;
+  font-family: glyphterFont, sans-serif;
   font-size: 14px;
   margin: 0;
 }
@@ -831,7 +841,7 @@ button {
 }
 
 .topbar-icon {
-  font-family: "Glyphter", sans-serif;
+  font-family: glyphterFont, sans-serif;
   font-size: 18px;
   color: #979797;
   margin: 0;
@@ -920,7 +930,7 @@ button {
   display: block;
   margin: 0 0 0 20px;
   color: #FFFFFF;
-  font-family: "Reklame Script DEMO", sans-serif;
+  font-family: ReklameScript, sans-serif;
   font-size: 30px;
 }
 
@@ -972,7 +982,7 @@ button {
 }
 
 .menu-icon {
-  font-family: "Glyphter", sans-serif;
+  font-family: glyphterFont, sans-serif;
   font-size: 16px;
   margin: 0 12px;
   color: #979797;
@@ -1144,7 +1154,7 @@ td {
 }
 
 .view-general .calendar-icon {
-  font-family: "Glyphter", sans-serif;
+  font-family: glyphterFont, sans-serif;
   font-size: 12px;
   color: #000000;
 }
