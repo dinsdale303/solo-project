@@ -1,12 +1,10 @@
-* {
-	box-sizing: border-box;
-}
-
 .sidebar {
 	background-color: $menu-background-color;
 	width: 200px;
 	height: 100vh;
 	position: fixed;
+	top: 0;
+	overflow: auto;
 }
 
 .menu-head {
@@ -26,6 +24,7 @@
 }
 
 .hamburger {
+	display: none;
 	color: $hamburger-color;
 	margin-right: 20px;
 	font-size: $hamburger-font-size;
@@ -68,7 +67,7 @@
 
 .menu-icon {
 	font-family: $icon-font;
-	font-size: $icon-font-size;
+	font-size: $menu-icon-font-size;
 	margin: 0 12px;
 	color: $menu-text-color;
 }
@@ -89,7 +88,7 @@
 	display: flex;
 	align-items: center;
 	position: relative;
-	.dot-green {
+	.manager-online {
 		position: absolute;
 		top: 0;
 		left: 50px;
@@ -101,6 +100,10 @@
 	border-radius: 50%;
 }
 
+.topbar-on-phone {
+	display: none;
+}
+
 #toggle {
 	display: none;
 }
@@ -109,11 +112,15 @@
 	.sidebar {
 		width: auto;
 	}
+	.topbar-on-phone {
+		display: flex;
+	}
 	.hamburger {
+		display: block;
 		cursor: pointer;
 		margin-left: 20px;
 	}
-	.menu-header, .menu-list, .manager-header, .manager {
+	.menu-header, .menu-list, .manager-header, .manager, .topbar-on-phone {
 		display: none;
 	}
 	#toggle:checked ~ .sidebar {
@@ -122,7 +129,7 @@
 	#toggle:checked ~ .sidebar .menu-header, #toggle:checked ~ .sidebar .menu-list, #toggle:checked ~ .sidebar .manager-header {
 		display: block;
 	}
-	 #toggle:checked ~ .sidebar .manager {
+	 #toggle:checked ~ .sidebar .manager, #toggle:checked ~ .sidebar .topbar-on-phone {
 	 	display: flex;
 	 }
 }

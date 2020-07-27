@@ -11,13 +11,20 @@
 	<body>
 <!-- topbar -->
 		<nav class="topbar">
-			<p class="menu-icon">b</p>
-			<h2>$1,500.00</h2>
-			<p class="menu-icon">A</p>
-			<p class="menu-icon">P</p>
-			<p class="menu-icon">V</p>
-			<p>Leonardo Dicaprio</p>
-			<p class="menu-icon">W</p>
+			<div class="topbar-part">
+				<p class="topbar-icon topbar-item">b</p>
+				<h2 class="topbar-item">$1,500.00</h2>
+				<p class="topbar-icon">A</p>
+			</div>
+			<div class="topbar-message">
+				<p class="topbar-icon topbar-part">P</p>
+				<div class="new-message dot-orange-small"></div>
+			</div>
+			<div class="topbar-part">
+				<p class="topbar-icon topbar-item">V</p>
+				<a>Leonardo Dicaprio</a>
+			</div>
+			<p class="topbar-icon topbar-part">W</p>
 		</nav>
 <!-- sidebar menu -->		
 		<div>
@@ -40,20 +47,52 @@
 				<h4 class="manager-header">your manager</h4>
 				<div class="manager">
 					<img src="//placehold.it/40x40" alt="foto" class="manager-foto">
-					<div class="dot-green"></div>
+					<div class="manager-online dot-green"></div>
 					<a>Mikhael E.</a>
 				</div>
+
+			<nav class="topbar-on-phone">
+				<div class="topbar-part">
+					<p class="topbar-icon topbar-item">b</p>
+					<h2 class="topbar-item">$1,500.00</h2>
+					<p class="topbar-icon">A</p>
+				</div>
+				<div class="topbar-message">
+					<p class="topbar-icon topbar-part">P</p>
+					<div class="new-message dot-orange-small"></div>
+				</div>
+				<p class="topbar-icon topbar-part">W</p>
+				<div class="topbar-part">
+					<p class="topbar-icon topbar-item">V</p>
+					<a>Leonardo Dicaprio</a>
+				</div>				
+			</nav>
+
 			</nav>
 		</div>
 <!-- content pages -->
 		<div class="container">
-			<div class="view-general view-page page-active" id="viewGeneral">general</div>
-			<div class="view-details view-page page-inactive" id="viewDetails">details</div>
-			<div class="view-links view-page page-inactive" id="viewLinks">links</div>
-			<div class="view-banners view-page page-inactive" id="viewBanners">banners</div>
-			<div class="view-personal-data view-page page-inactive" id="viewPersonalData">personal data</div>
-			<div class="view-payout view-page page-inactive" id="viewPayout">payout</div>
-			<div class="view-postback view-page page-inactive" id="viewPostback">postback</div>
+			<div class="view-general view-page page-active" id="viewGeneral">
+				general
+			</div>
+			<div class="view-details view-page page-inactive" id="viewDetails">
+				details
+			</div>
+			<div class="view-links view-page page-inactive" id="viewLinks">
+				links
+			</div>
+			<div class="view-banners view-page page-inactive" id="viewBanners">
+				banners
+			</div>
+			<div class="view-personal-data view-page page-inactive" id="viewPersonalData">
+				personal data
+			</div>
+			<div class="view-payout view-page page-inactive" id="viewPayout">
+				payout
+			</div>
+			<div class="view-postback view-page page-inactive" id="viewPostback">
+				postback
+			</div>
 		</div>
 <!-- javascript -->
 		<script src="js/script.js"></script>

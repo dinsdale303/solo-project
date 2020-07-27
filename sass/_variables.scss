@@ -38,15 +38,20 @@ $dot-orange: $orange1;
 $dot-blue: $blue1;
 $topbar-background-color: $white1;
 $topbar-text-color: $grey1;
+$topbar-border-color: $grey3;
+$body-background-color: $grey3;
+$container-background-color: $grey3;
+$page-background-color: $white2;
 
 
 /* font sizes */
 $menu-font-size: 16px;
 $menu-header-font-size: 30px;
 $hamburger-font-size: 25px;
-$icon-font-size: 16px;
-$h1-font-size: 20px;
-$h2-font-size: 18px;
+$menu-icon-font-size: 16px;
+$topbar-icon-font-size: 18px;
+$h1-font-size: 24px;
+$h2-font-size: 20px;
 $h3-font-size: 16px;
 $h4-font-size: 14px;
 $h5-font-size: 12px;
@@ -68,3 +73,7 @@ $icon-font: $glypher;
 $header-font: $arial;
 $paragraph-font: $tahoma;
 $links-font: $tahoma;
+
+
+/* other */
+$container-min-height: 100vh;

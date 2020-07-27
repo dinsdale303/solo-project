@@ -1,15 +1,59 @@
-* {
-	box-sizing: border-box;
-}
-
 .topbar {
 	position: fixed;
+	top: 0;
 	display: flex;
 	width: 100%;
 	height: 60px;
+	line-height: 60px;
 	align-items: center;
 	justify-content: flex-end;
 	background-color: $topbar-background-color;
+}
+
+.topbar-icon {
+	font-family: $icon-font;
+	font-size: $topbar-icon-font-size;
+	color: $menu-text-color;
+	margin: 0;
+}
+
+.topbar-part {
+	height: 60px;
+	display: flex;
+	align-items: center;
+	padding: 0 21px;
+	border-left: 1px solid $topbar-border-color;
+}
+
+.topbar-item {
+	padding-right: 14px;
+	margin: 0;
+}
+
+.topbar-message {
+	display: flex;
+	position: relative;
+	.new-message {
+		position: absolute;
+		top: 18px;
+		left: 32px;
+	}
+}
+
+.topbar-on-phone {
+	margin-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 200px;
+	justify-content: center;
+	line-height: 40px;
+	.topbar-part {
+		border: none;
+		height: 40px;
+	}
+	.new-message {
+		top: 9px;
+	}
 }
 
 @media(max-width: 767px) {
