@@ -656,6 +656,7 @@ a {
   font-family: Tahoma, Geneva, sans-serif;
   color: #56819F;
   font-size: 12px;
+  text-decoration: none;
 }
 
 .dot, .dot-green, .dot-orange, .dot-blue {
@@ -764,7 +765,6 @@ a {
   -ms-flex-align: center;
       align-items: center;
   height: 40px;
-  text-decoration: none;
   color: #979797;
   background-color: #000000;
   border-left: 4px solid #000000;
