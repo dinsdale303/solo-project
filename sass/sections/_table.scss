@@ -1,0 +1,47 @@
+table {
+	display: table;
+	width: 100%;
+	border-spacing: 0;
+}
+
+tr {
+	height: 60px;
+	width: 100%;
+	&:hover {
+		background-color: $table-border-background-hover;
+		cursor: pointer;
+		.td3 {
+			p {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+td {
+	padding: 0;
+	border-bottom: 1px solid $table-border;
+}
+
+.td-top {
+	border-top: 1px solid $table-border;
+}
+
+.td1 {
+	padding-left: 15px;
+	width: 45%;
+}
+
+.td2 {
+	width: 45%;
+}
+
+.td3 {
+	padding-right: 15px;
+	width: 10%;
+	p {
+		display: none;
+		width: 50%;
+		text-align: center;
+	}
+}

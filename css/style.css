@@ -1,7 +1,7 @@
 /* colors */
 /* font sizes */
 /* fonts */
-/* other */
+/* grid */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -341,22 +341,28 @@ template {
   display: none;
 }
 
-.body {
+.container {
   background-color: #E3E3E3;
+  overflow: auto;
 }
 
-.container {
-  position: relative;
-  z-index: -1;
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .page-active {
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 .page-inactive {
   display: none;
+}
+
+.view-page {
+  background-color: #F5F5F2;
 }
 
 @media (max-width: 767px) {
@@ -422,7 +428,10 @@ template {
   }
   .container {
     margin: 0 0 0 63px;
-    min-height: 100vh;
+    height: 100vh;
+  }
+  .view-page {
+    margin: 5px;
   }
 }
 
@@ -489,7 +498,10 @@ template {
   }
   .container {
     margin: 60px 0 0 200px;
-    min-height: calc 100vh - 60px;
+    height: calc(100vh - 60px);
+  }
+  .view-page {
+    margin: 10px;
   }
 }
 
@@ -553,6 +565,9 @@ template {
     -ms-flex: 0 0 100%;
         flex: 0 0 100%;
     max-width: 100%;
+  }
+  .view-page {
+    margin: 20px;
   }
 }
 
@@ -651,16 +666,83 @@ h6 {
 }
 
 p {
+  margin: 0;
   font-family: Tahoma, Geneva, sans-serif;
   color: #979797;
-  font-size: 12px;
+  font-size: 16px;
+}
+
+.p-bold {
+  font-weight: bold;
 }
 
 a {
+  margin: 0;
   font-family: Tahoma, Geneva, sans-serif;
   color: #56819F;
-  font-size: 12px;
+  font-size: 16px;
   text-decoration: none;
+}
+
+.links-icon, .links-icon1, .links-icon2 {
+  font-family: "Glyphter", sans-serif;
+  font-size: 14px;
+}
+
+.links-icon1 {
+  color: #F58220;
+}
+
+.links-icon2 {
+  color: #979797;
+}
+
+button {
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.button-active {
+  background-color: #F58220;
+}
+
+.button-active:hover {
+  background-color: #FFA200;
+}
+
+.button-inactive {
+  background-color: #979797;
+}
+
+.button-inactive:hover {
+  background-color: #E3E3E3;
+}
+
+.button-icon {
+  font-family: "Glyphter", sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+.add-button {
+  width: 120px;
+  height: 35px;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.add-button-bottom {
+  margin: 20px 15px 20px -15px;
+}
+
+.button-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .dot, .dot-green, .dot-orange, .dot-blue {
@@ -717,6 +799,20 @@ a {
   background-color: #56819F;
 }
 
+.page-header {
+  display: block;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.page-header h3 {
+  line-height: 50px;
+  min-width: 100%;
+  margin: 0;
+  padding-left: 20px;
+  border-bottom: 1px solid #E3E3E3;
+}
+
 /* sections */
 .topbar {
   position: fixed;
@@ -731,6 +827,7 @@ a {
   -ms-flex-pack: end;
       justify-content: flex-end;
   background-color: #FFFFFF;
+  z-index: 1;
 }
 
 .topbar-icon {
@@ -788,6 +885,10 @@ a {
   top: 9px;
 }
 
+.topbar-username {
+  font-size: 12px;
+}
+
 @media (max-width: 767px) {
   .topbar {
     display: none;
@@ -801,6 +902,7 @@ a {
   position: fixed;
   top: 0;
   overflow: auto;
+  z-index: 2;
 }
 
 .menu-head {
@@ -943,9 +1045,137 @@ a {
   }
 }
 
+table {
+  display: table;
+  width: 100%;
+  border-spacing: 0;
+}
+
+tr {
+  height: 60px;
+  width: 100%;
+}
+
+tr:hover {
+  background-color: #E3E3E3;
+  cursor: pointer;
+}
+
+tr:hover .td3 p {
+  display: inline-block;
+}
+
+td {
+  padding: 0;
+  border-bottom: 1px solid #BABABA;
+}
+
+.td-top {
+  border-top: 1px solid #BABABA;
+}
+
+.td1 {
+  padding-left: 15px;
+  width: 45%;
+}
+
+.td2 {
+  width: 45%;
+}
+
+.td3 {
+  padding-right: 15px;
+  width: 10%;
+}
+
+.td3 p {
+  display: none;
+  width: 50%;
+  text-align: center;
+}
+
 /* pages / views */
-.view-general {
-  background-color: #F5F5F2;
+.view-general .general-calendar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.view-general .general-calendar-text {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0;
+  width: auto;
+  color: #000000;
+  font-size: 14px;
+  height: 30px;
+}
+
+.view-general .general-calendar-line {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 5px 15px;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+  width: 320px;
+}
+
+.view-general .general-calendar-end {
+  padding-left: 15px;
+  border-left: 1px solid #E3E3E3;
+}
+
+.view-general .general-calendar-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100px;
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.view-general .calendar-icon {
+  font-family: "Glyphter", sans-serif;
+  font-size: 12px;
+  color: #000000;
+}
+
+.view-general .general-stats-row {
+  margin: 20px 0 60px 0;
+}
+
+.view-general .general-stats {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #E3E3E3;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+.view-general .general-stat-number {
+  color: #000000;
+}
+
+.view-general .calendar-button {
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+}
+
+.view-general canvas {
+  max-height: 500px;
 }
 
 @media (max-width: 767px) {
@@ -1009,10 +1239,11 @@ a {
         flex: 0 0 100%;
     max-width: 100%;
   }
-  .view-general {
-    position: absolute;
-    top: 0;
-    margin: 5px;
+  .p-bold {
+    margin-left: 20px;
+  }
+  .general-stat-number {
+    margin-right: 20px;
   }
 }
 
@@ -1077,10 +1308,11 @@ a {
         flex: 0 0 100%;
     max-width: 100%;
   }
-  .view-general {
-    position: absolute;
-    top: 0;
-    margin: 10px;
+  .p-bold {
+    margin-left: 0;
+  }
+  .general-stat-number {
+    margin-right: 0;
   }
 }
 
@@ -1144,11 +1376,6 @@ a {
     -ms-flex: 0 0 100%;
         flex: 0 0 100%;
     max-width: 100%;
-  }
-  .view-general {
-    position: absolute;
-    top: 0;
-    margin: 20px;
   }
 }
 
@@ -1219,8 +1446,11 @@ a {
   box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
+.view-links .links-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 * {

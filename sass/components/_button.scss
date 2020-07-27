@@ -1,0 +1,43 @@
+button {
+	border: none;
+	outline: none;
+	color: $button-text-color;
+	font-size: $button-font-size;
+	border-radius: 5px;
+}
+
+.button-active {
+	background-color: $active-button-color;
+	&:hover {
+		background-color: $active-button-color-hover;
+	}
+}
+
+.button-inactive {
+	background-color: $inactive-button-color;
+	&:hover {
+		background-color: $inactive-button-color-hover;
+	}
+}
+
+.button-icon {
+	font-family: $icon-font;
+	font-size: $button-font-size;
+	margin: 0;
+}
+
+.add-button {
+	width: 120px;
+	height: 35px;
+	font-size: $add-button-text-size;
+	margin: 20px 0;
+}
+
+.add-button-bottom {
+	margin: 20px 15px 20px -15px;
+}
+
+.button-row {
+	display: flex;
+	justify-content: center;
+}

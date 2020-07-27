@@ -1,25 +1,33 @@
-.body {
-	background-color: $body-background-color;
+.container {
+	background-color: $container-background-color;
+	overflow: auto;
 }
 
-.container {
-	position: relative;
-	z-index: -1;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .page-active {
-	display: flex;
+	display: block;
 }
 
 .page-inactive {
 	display: none;
 }
 
+.view-page {
+	background-color: $page-background-color;
+}
+
 @media(max-width: 767px) {
 	@include grid('sm');
 	.container {
 		margin: 0 0 0 63px;
-		min-height: $container-min-height;
+		height: 100vh;
+	}
+	.view-page {
+		margin: 5px;
 	}
 }
 
@@ -27,12 +35,18 @@
 	@include grid('md');
 	.container {
 		margin: 60px 0 0 200px;
-		min-height: calc (#{$container-min-height} - 60px);
+		height: calc(100vh - 60px);
+	}
+	.view-page {
+		margin: 10px;
 	}
 }
 
 @media(min-width: 992px) {
 	@include grid('lg');
+	.view-page {
+		margin: 20px;
+	}
 }
 
 @media(min-width: 1200px) {

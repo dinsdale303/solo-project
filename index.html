@@ -22,7 +22,7 @@
 			</div>
 			<div class="topbar-part">
 				<p class="topbar-icon topbar-item">V</p>
-				<a>Leonardo Dicaprio</a>
+				<a class="topbar-username">Leonardo Dicaprio</a>
 			</div>
 			<p class="topbar-icon topbar-part">W</p>
 		</nav>
@@ -50,51 +50,227 @@
 					<div class="manager-online dot-green"></div>
 					<a>Mikhael E.</a>
 				</div>
-
-			<nav class="topbar-on-phone">
-				<div class="topbar-part">
-					<p class="topbar-icon topbar-item">b</p>
-					<h2 class="topbar-item">$1,500.00</h2>
-					<p class="topbar-icon">A</p>
-				</div>
-				<div class="topbar-message">
-					<p class="topbar-icon topbar-part">P</p>
-					<div class="new-message dot-orange-small"></div>
-				</div>
-				<p class="topbar-icon topbar-part">W</p>
-				<div class="topbar-part">
-					<p class="topbar-icon topbar-item">V</p>
-					<a>Leonardo Dicaprio</a>
-				</div>				
-			</nav>
-
+	<!-- topbar moved to sidebar on phones -->
+				<nav class="topbar-on-phone">
+					<div class="topbar-part">
+						<p class="topbar-icon topbar-item">b</p>
+						<h2 class="topbar-item">$1,500.00</h2>
+						<p class="topbar-icon">A</p>
+					</div>
+					<div class="topbar-message">
+						<p class="topbar-icon topbar-part">P</p>
+						<div class="new-message dot-orange-small"></div>
+					</div>
+					<p class="topbar-icon topbar-part">W</p>
+					<div class="topbar-part">
+						<p class="topbar-icon topbar-item">V</p>
+						<a class="topbar-username">Leonardo Dicaprio</a>
+					</div>				
+				</nav>
 			</nav>
 		</div>
 <!-- content pages -->
 		<div class="container">
+	<!-- page general -->
 			<div class="view-general view-page page-active" id="viewGeneral">
-				general
+				<div class="page-header">
+					<div class="row">
+						<h3>general statistic</h3>
+					</div>
+				</div>
+				<div class="row general-calendar-row">
+					<div class="col-sm-1 col-md-2 col-lg-4 col-xl-4">
+					</div>
+					<div class="col-sm-10 col-md-8 col-lg-4 col-xl-4">
+						<div class="general-calendar">
+							<div class="general-calendar-line">
+								<p class="general-calendar-text general-calendar-start">16.05.2016.</p>
+								<p class="general-calendar-text general-calendar-end">16.05.2016.</p>
+								<p class="general-calendar-text calendar-icon">H</p>								
+							</div>
+							<button class="button-active calendar-button button-icon">X</button>
+						</div>
+					</div>
+					<div class="col-sm-1 col-md-2 col-lg-4 col-xl-4">
+					</div>
+				</div>
+				<div class="row general-chart-row">
+					<div class="col-sm-0 col-md-1 col-lg-2 col-xl-2">
+					</div>
+					<div class="col-sm-12 col-md-10 col-lg-8 col-xl-8">
+						<div class="row general-stats-row">
+							<div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
+								<div class="general-stats">
+									<p class="p-bold">Visit Signups</p><p class="general-stat-number">124</p>
+								</div>
+								<div class="general-stats">
+									<p class="p-bold">FTD</p><p class="general-stat-number">445</p>
+								</div>
+							</div>
+							<div class="col-sm-0 col-md-2 col-lg-2 col-xl-2">
+							</div>
+							<div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
+								<div class="general-stats">
+									<p class="p-bold">Net deposit</p><p class="general-stat-number">564</p>
+								</div>
+								<div class="general-stats">
+									<p class="p-bold">Turn over</p><p class="general-stat-number">432</p>
+								</div>
+							</div>
+						</div>
+						<p class="p-bold"> Earnings chart</p>
+						<canvas id="generalChart"></canvas>
+					</div>
+					<div class="col-sm-0 col-md-1 col-lg-2 col-xl-2">
+					</div>
+				</div>
 			</div>
+	<!-- page details -->
 			<div class="view-details view-page page-inactive" id="viewDetails">
-				details
+				<div class="page-header">
+					<div class="row">
+						<h3>detail statistic</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<p>details</p>
+					</div>
+				</div>
 			</div>
-			<div class="view-links view-page page-inactive" id="viewLinks">
-				links
+	<!-- page links -->
+			<div class="view-links view-page page-active" id="viewLinks">
+				<div class="page-header">
+					<div class="row">
+						<h3>links</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 button-row">
+						<button class="button-active add-button">+ add new</button>
+					</div>
+				</div>
+				<div class="row links-row">
+					<div class="col-sm-0 col-md-1 col-lg-2 col-xl-2">
+					</div>
+					<div class="col-sm-12 col-md-10 col-lg-8 col-xl-8">
+						<table>
+							<tr>
+								<td class="td1 td-top"><p class="p-bold">Home page</p></td>
+								<td class="td2 td-top"><a href="#">http://www.homepage.com</a></td>
+								<td class="td3 td-top"><p class="links-icon1">L</p><p class="links-icon2">Z</p></td>
+							</tr>
+							<tr>
+								<td class="td1"><p class="p-bold">Currently offer</p></td>
+								<td class="td2"><a href="#">http://www.currently.com</a></td>
+								<td class="td3"><p class="links-icon1">L</p><p class="links-icon2">Z</p></td>
+							</tr>
+							<tr>
+								<td class="td1"><p class="p-bold">Blurpix</p></td>
+								<td class="td2"><a href="#">http://www.blurpix.com</a></td>
+								<td class="td3"><p class="links-icon1">L</p><p class="links-icon2">Z</p></td>
+							</tr>
+							<tr>
+								<td class="td1"><p class="p-bold">Your Site</p></td>
+								<td class="td2"><a href="#">http://www.yoursite.com</a></td>
+								<td class="td3"><p class="links-icon1">L</p><p class="links-icon2">Z</p></td>
+							</tr>
+							<tr>
+								<td class="td1"><p class="p-bold">Google</p></td>
+								<td class="td2"><a href="#">http://www.google.com</a></td>
+								<td class="td3"><p class="links-icon1">L</p><p class="links-icon2">Z</p></td>
+							</tr>
+							<tr>
+								<td class="td1"><p class="p-bold">Facebook</p></td>
+								<td class="td2"><a href="#">http://www.facebook.com</a></td>
+								<td class="td3"><p class="links-icon1">L</p><p class="links-icon2">Z</p></td>
+							</tr>
+							<tr>
+								<td class="td1"><p class="p-bold">Dashboard</p></td>
+								<td class="td2"><a href="#">http://www.dashboard.com</a></td>
+								<td class="td3"><p class="links-icon1">L</p><p class="links-icon2">Z</p></td>
+							</tr>
+							<tr>
+								<td class="td1"><p class="p-bold">Blurax</p></td>
+								<td class="td2"><a href="#">http://www.blurax.com</a></td>
+								<td class="td3"><p class="links-icon1">L</p><p class="links-icon2">Z</p></td>
+							</tr>
+							<tr>
+								<td class="td1"><p class="p-bold">Piece of Wine</p></td>
+								<td class="td2"><a href="#">http://www.pieceofwine.com</a></td>
+								<td class="td3"><p class="links-icon1">L</p><p class="links-icon2">Z</p></td>
+							</tr>
+							<tr>
+								<td class="td1"><p class="p-bold">Twitter</p></td>
+								<td class="td2"><a href="#">http://www.twitter.com</a></td>
+								<td class="td3"><p class="links-icon1">L</p><p class="links-icon2">Z</p></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-sm-0 col-md-1 col-lg-2 col-xl-2">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 button-row">
+						<button class="button-active add-button add-button-bottom">+ add new</button>
+					</div>
+				</div>
 			</div>
+	<!-- page banners -->
 			<div class="view-banners view-page page-inactive" id="viewBanners">
-				banners
+				<div class="page-header">
+					<div class="row">
+						<h3>banners</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<p>banners</p>
+					</div>
+				</div>
 			</div>
+	<!-- page personal data -->
 			<div class="view-personal-data view-page page-inactive" id="viewPersonalData">
-				personal data
+				<div class="page-header">
+					<div class="row">
+						<h3>personal data</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<p>personal data</p>
+					</div>
+				</div>
 			</div>
+	<!-- page payout -->
 			<div class="view-payout view-page page-inactive" id="viewPayout">
-				payout
+				<div class="page-header">
+					<div class="row">
+						<h3>payout history</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<p>payout</p>
+					</div>
+				</div>
 			</div>
+	<!-- page postback -->
 			<div class="view-postback view-page page-inactive" id="viewPostback">
-				postback
+				<div class="page-header">
+					<div class="row">
+						<h3>new postback</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<p>postback</p>
+					</div>
+				</div>
 			</div>
 		</div>
-<!-- javascript -->
+<!-- scripts -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>

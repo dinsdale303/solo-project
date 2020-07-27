@@ -8,6 +8,7 @@
 	align-items: center;
 	justify-content: flex-end;
 	background-color: $topbar-background-color;
+	z-index: 1;
 }
 
 .topbar-icon {
@@ -54,6 +55,10 @@
 	.new-message {
 		top: 9px;
 	}
+}
+
+.topbar-username {
+	font-size: 12px;
 }
 
 @media(max-width: 767px) {

@@ -5,11 +5,14 @@
 
 /* components */
 @import 'components/paragraph';
+@import 'components/button';
 @import 'components/dots';
+@import 'components/pageheader';
 
 /* sections */
 @import 'sections/topbar';
 @import 'sections/sidebar';
+@import 'sections/table';
 
 /* pages / views */
 @import 'pages/general';

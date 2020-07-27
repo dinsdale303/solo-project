@@ -42,6 +42,12 @@ $topbar-border-color: $grey3;
 $body-background-color: $grey3;
 $container-background-color: $grey3;
 $page-background-color: $white2;
+$calendar-icon-color: $black1;
+$paragraph-color2: $black1;
+$links-icon-color1: $orange1;
+$links-icon-color2: $grey1;
+$table-border: $grey2;
+$table-border-background-hover: $grey3;
 
 
 /* font sizes */
@@ -56,8 +62,12 @@ $h3-font-size: 16px;
 $h4-font-size: 14px;
 $h5-font-size: 12px;
 $h6-font-size: 10px;
-$paragraph-font-size: 12px;
-$links-font-size: 12px;
+$paragraph-font-size: 16px;
+$links-font-size: 16px;
+$button-font-size: 14px;
+$add-button-text-size: 18px;
+$calendar-icon-size: 12px;
+$links-icon-size: 14px;
 
 
 /* fonts */
@@ -73,7 +83,3 @@ $icon-font: $glypher;
 $header-font: $arial;
 $paragraph-font: $tahoma;
 $links-font: $tahoma;
-
-
-/* other */
-$container-min-height: 100vh;
