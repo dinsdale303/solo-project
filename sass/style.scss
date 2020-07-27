@@ -1,47 +1,24 @@
-@import "variables";
-@import "mixins";
-@import "normalize";
-@import "layout";
+@import 'variables';
+@import 'mixins';
+@import 'normalize';
+@import 'layout';
 
-/* Components */
-//@import "components/form_field";
+/* components */
+@import 'components/paragraph';
+@import 'components/dots';
 
-/* Sections */
-//@import "section/registration_form";
+/* sections */
+@import 'sections/sidebar';
 
-/* Pages / Views */
-//@import "pages/registration";
+/* pages / views */
+@import 'pages/general';
+@import 'pages/details';
+@import 'pages/links';
+@import 'pages/banners';
+@import 'pages/personaldata';
+@import 'pages/payout';
+@import 'pages/postback';
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+* {
+	box-sizing: border-box;
 }
-
-li img {
-	width: 15px;
-	height: 15px;
-	padding: 15px;
-}
-
-li a {
-	display: flex;
-	align-items: center;
-	height: 30px;
-	text-decoration: none;
-	color: $menu-text-color;
-	background-color: $menu-background-color;
-	border-left: 4px solid $menu-background-color;
-	&:hover {
-		color: $menu-text-color-hover;
-		background-color: $menu-background-color-hover;
-		border-left: 4px solid $orange2;
-	}
-}
-
-.menu {
-	background-color: $menu-background-color;
-	width: 200px;
-	height: 100vh;
-	position: fixed;
-} 

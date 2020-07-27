@@ -1,0 +1,62 @@
+.dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+.dot-small {
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+}
+
+.dot-big {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+}
+
+.dot-green {
+	@extend .dot;
+	background-color: $dot-green;
+}
+
+.dot-green-small {
+	@extend .dot-small;
+	background-color: $dot-green;
+}
+
+.dot-green-big {
+	@extend .dot-big;
+	background-color: $dot-green;
+}
+
+.dot-orange {
+	@extend .dot;
+	background-color: $dot-orange;
+}
+
+.dot-orange-small {
+	@extend .dot-small;
+	background-color: $dot-orange;
+}
+
+.dot-orange-big {
+	@extend .dot-big;
+	background-color: $dot-orange;
+}
+
+.dot-blue {
+	@extend .dot;
+	background-color: $dot-blue;
+}
+
+.dot-blue-small {
+	@extend .dot-small;
+	background-color: $dot-blue;
+}
+
+.dot-blue-big {
+	@extend .dot-big;
+	background-color: $dot-blue;
+}

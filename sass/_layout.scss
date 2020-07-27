@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+}
+
+.page-active {
+	display: flex;
+}
+
+.page-inactive {
+	display: none;
+}
+
+@media(max-width: 767px) {
+	@include grid('sm');
+	.container {
+		margin-left: 63px;
+	}
+}
+
+@media(min-width: 768px) {
+	@include grid('md');
+	.container {
+		margin-left: 200px;
+	}
+}
+
+@media(min-width: 992px) {
+	@include grid('lg');
+}
+
+@media(min-width: 1200px) {
+	@include grid('xl');
+}

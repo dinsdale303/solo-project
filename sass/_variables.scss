@@ -1,4 +1,4 @@
-/* Colors */
+/* colors */
 $white1: #FFFFFF;
 $white2: #F5F5F2;
 $black1: #000000;
@@ -28,8 +28,41 @@ $menu-background-color: $black1;
 $menu-text-color: $grey1;
 $menu-background-color-hover: $black2;
 $menu-text-color-hover: $white1;
+$menu-line-color: $black2;
+$hamburger-color: $grey1;
+$header-text-color: $grey1;
+$paragraph-color: $grey1;
+$link-color: $blue1;
+$dot-green: $green1;
+$dot-orange: $orange1;
+$dot-blue: $blue1;
 
-/* Font sizes */
+
+/* font sizes */
+$menu-font-size: 16px;
+$menu-header-font-size: 30px;
+$hamburger-font-size: 25px;
+$icon-font-size: 16px;
+$h1-font-size: 20px;
+$h2-font-size: 18px;
+$h3-font-size: 16px;
+$h4-font-size: 14px;
+$h5-font-size: 12px;
+$h6-font-size: 10px;
+$paragraph-font-size: 12px;
+$links-font-size: 12px;
 
 
-/* Fonts */
+/* fonts */
+$arial: Arial, Helvetica, sans-serif;
+$tahoma: Tahoma, Geneva, sans-serif;
+$verdana: Verdana, Geneva, sans-serif;
+$glypher: "Glyphter", sans-serif;
+$reklamescript: "Reklame Script DEMO", sans-serif;
+
+$menu-font: $verdana;
+$menu-header-font: $reklamescript;
+$icon-font: $glypher;
+$header-font: $arial;
+$paragraph-font: $tahoma;
+$links-font: $tahoma;

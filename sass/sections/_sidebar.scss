@@ -1,0 +1,129 @@
+* {
+	box-sizing: border-box;
+}
+
+.sidebar {
+	background-color: $menu-background-color;
+	width: 200px;
+	height: 100vh;
+	position: fixed;
+}
+
+.menu-head {
+	display: flex;
+	height: 50px;
+	margin: 10px 0;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu-header {
+	display: block;
+	margin: 0 0 0 20px;
+	color: $menu-text-color-hover;
+	font-family: $menu-header-font;
+	font-size: $menu-header-font-size;
+}
+
+.hamburger {
+	color: $hamburger-color;
+	margin-right: 20px;
+	font-size: $hamburger-font-size;
+}
+
+.menu-list {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-list-item {
+	font-family: $menu-font;
+	font-size: $menu-font-size;
+	display: flex;
+	align-items: center;
+	height: 40px;
+	text-decoration: none;
+	color: $menu-text-color;
+	background-color: $menu-background-color;
+	border-left: 4px solid $menu-background-color;
+	&:hover {
+		color: $menu-text-color-hover;
+		background-color: $menu-background-color-hover;
+		border-left: 4px solid $orange2;
+		.menu-icon {
+			color: $menu-text-color-hover;
+		}
+	}
+}
+
+.link-change-view {
+	color: $menu-text-color-hover;
+	background-color: $menu-background-color-hover;
+	border-left: 4px solid $orange2;
+	.menu-icon {
+		color: $menu-text-color-hover;
+	}
+}
+
+.menu-icon {
+	font-family: $icon-font;
+	font-size: $icon-font-size;
+	margin: 0 12px;
+	color: $menu-text-color;
+}
+
+.menu-end {
+	margin: 20px 0;
+	border: none;
+	height: 1px;
+	background: $menu-line-color;
+}
+
+.manager-header {
+	display: block;
+	margin-left: 20px;
+}
+
+.manager {
+	display: flex;
+	align-items: center;
+	position: relative;
+	.dot-green {
+		position: absolute;
+		top: 0;
+		left: 50px;
+	}
+}
+
+.manager-foto {
+	margin: 0 20px;
+	border-radius: 50%;
+}
+
+#toggle {
+	display: none;
+}
+
+@media(max-width: 767px) {
+	.sidebar {
+		width: auto;
+	}
+	.hamburger {
+		cursor: pointer;
+		margin-left: 20px;
+	}
+	.menu-header, .menu-list, .manager-header, .manager {
+		display: none;
+	}
+	#toggle:checked ~ .sidebar {
+		width: 200px;
+	}
+	#toggle:checked ~ .sidebar .menu-header, #toggle:checked ~ .sidebar .menu-list, #toggle:checked ~ .sidebar .manager-header {
+		display: block;
+	}
+	 #toggle:checked ~ .sidebar .manager {
+	 	display: flex;
+	 }
+}
