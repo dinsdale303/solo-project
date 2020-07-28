@@ -1,4 +1,105 @@
-* {
-	box-sizing: border-box;
+.view-postback {
+	.postback-header {
+		color: $paragraph-color2;
+		font-size: $paragraph-font-size2;
+		padding: 25px 0 10px 20px;
+	}
+	.postback-row {
+		width: 100%;
+	}
+	.p-red {
+		color: $paragraph-alt-color;
+		display: inline;
+	}
+	input:not([type="checkbox"]), select, textarea {
+		display: block;
+		width: 100%;
+	}
+	textarea {
+		resize: none;
+		height: 200px;
+	}
+	.row-with-button {
+		text-align: right;
+		button {
+			margin: 20px 20px 20px 0;
+		}
+	}
+	.checkbox-list {
+		height: 200px;
+		overflow-y: auto;
+	}
+	.postback-row-send {
+		margin-top: 20px;
+		border-top: 1px solid $container-background-color;
+		border-bottom: 1px solid $container-background-color;
+	}
+	.min-max {
+		padding: 10px 0;
+		display: flex;
+		justify-content: space-between;
+		p {
+			font-size: $paragraph-font-size2;
+		}
+	}
+	input[type=range] {
+		background: linear-gradient(to right, $range-color 0%, $range-color (104/168)*100%, $container-background-color (104/168)*100%, $container-background-color 100%);
+	}
+	.range-output {
+		position: relative;
+		output, p {
+			position: absolute;
+			color: $paragraph-color2;
+			font-size: $paragraph-font-size2;
+		}
+		output {
+			top: 46px;
+			left: calc(104/168*100% - 104/168*60px);
+		}
+		p {
+			top: 45px;
+			left: calc(104/168*100% - 104/168*60px + 20px);
+		}
+	}
 }
 
+@media(max-width: 767px) {
+	[class*="postback-"][class$="-div"] {
+		padding: 20px;
+	}
+	.postback-send-div {
+		border-top: 1px solid $container-background-color;
+		margin-bottom: 70px;
+	}
+}
+
+@media(min-width: 768px) {
+	.postback-signup-div {
+		padding: 20px 10px 10px 20px;
+	}
+	.postback-deposit-div {
+		padding: 20px 20px 10px 10px;
+	}
+	.postback-type-div {
+		padding: 20px 10px 20px 20px;
+	}
+	.postback-country-div {
+		padding: 20px 10px 20px 10px;
+	}
+	.postback-options-div {
+		padding: 20px 20px 20px 10px;
+	}
+	.postback-statuses-div {
+		padding: 20px 20px 20px 20px;
+	}
+	.postback-send-div {
+		padding: 20px 20px 20px 20px;
+		border-left: 1px solid $container-background-color;
+	}
+}
+
+@media(min-width: 992px) {
+}
+
+@media(min-width: 1200px) {
+}

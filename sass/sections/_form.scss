@@ -1,0 +1,128 @@
+label {
+	display: inline-block;
+	height: 40px;
+	font-family: $paragraph-font;
+	color: $paragraph-color;
+	font-size: $paragraph-font-size;
+	font-weight: bold;
+}
+
+input:not([type="range"]), select {
+	display: inline-block;
+	height: 40px;
+	border: 1px solid $container-background-color;
+	border-radius: 4px;
+	background-color: $page-background-color;
+	color: $paragraph-color2;
+	font-size: $input-font-size;
+	padding-left: 15px;
+	&:focus {
+		outline: none;
+		border-color: $focus-input-border-color;
+	}
+	&:invalid {
+		background-color: $input-invalid-color;
+	}
+}
+
+input[type="checkbox"] {
+	visibility: hidden;
+}
+
+textarea {
+	padding: 20px 0 0 20px;
+	color: $paragraph-color;
+	border: 1px solid $container-background-color;
+	border-radius: 4px;
+	outline: none;
+}
+
+.newCheckbox {
+	margin-right: 20px;
+	height: 45px;
+	display: flex;
+	position: relative;
+	&:hover {
+		background-color: $container-background-color;
+		cursor: pointer;
+		a {
+			visibility: visible;
+		}
+	}
+	label {
+		cursor: pointer;
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		top: 10px;
+		left: 15px;
+		background-color: $checkbox-unchecked-color;
+		border: 1px solid $container-background-color;	
+		&:after {
+			opacity: 0;
+			content: '';
+			position: absolute;
+			width: 9px;
+			height: 5px;
+			background-color: transparent;
+			top: 6px;
+			left: 7px;
+			border: 3px solid $button-text-color;
+			border-top: none;
+			border-right: none;
+			transform: rotate(-45deg);
+		}	
+	}
+	p {
+		line-height: 45px;
+		margin-left: 45px;
+		color: $paragraph-color2;
+		font-size: $paragraph-font-size2;
+	}
+	a {
+		width: 1000px;
+		padding-right: 15px;
+		text-align: right;
+		line-height: 45px;
+		visibility: hidden;		
+	}
+}
+
+.newCheckbox input[type=checkbox]:checked + label {
+	background-color: $checkbox-checked-color;
+}
+
+.newCheckbox input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+
+input[type=range] {
+	width: 200px;
+	-webkit-appearance: none;
+	background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+}
+
+input[type=range]:focus {
+	outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	cursor: pointer;
+	width: 20px;
+	height: 10px;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 25px solid $range-color;
+	padding-top: 15px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 10px;
+	cursor: pointer;
+}

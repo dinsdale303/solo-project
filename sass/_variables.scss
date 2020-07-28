@@ -33,6 +33,7 @@ $hamburger-color: $grey1;
 $header-text-color: $grey1;
 $paragraph-color: $grey1;
 $paragraph-color2: $black1;
+$paragraph-alt-color: $red1;
 $link-color: $blue1;
 $dot-green: $green1;
 $dot-orange: $orange1;
@@ -51,6 +52,11 @@ $table-border-background-hover: $grey3;
 $focus-input-border-color: $grey1;
 $input-valid-color: $green2;
 $input-invalid-color: $red2;
+$scrollbar-color: $grey1;
+$scrollbar-background-color: $grey3;
+$checkbox-checked-color: $green1;
+$checkbox-unchecked-color: $white1;
+$range-color: $orange1;
 
 
 /* font sizes */
@@ -66,6 +72,7 @@ $h4-font-size: 14px;
 $h5-font-size: 12px;
 $h6-font-size: 10px;
 $paragraph-font-size: 16px;
+$paragraph-font-size2: 14px;
 $links-font-size: 16px;
 $button-font-size: 14px;
 $add-button-text-size: 18px;

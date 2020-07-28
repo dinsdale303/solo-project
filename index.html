@@ -686,10 +686,104 @@
 						<h3>new postback</h3>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-						<p>postback</p>
+				<p class="postback-header">You can insert some parameters in this postback:</p>
+				<form>
+					<div class="row postback-row">
+						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 postback-signup-div">
+							<div class="field">
+								<label>Signup</label>
+								<textarea name="postback-signup">crm_userId =%user_id%&#10;subid =%p%</textarea>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 postback-deposit-div">
+							<div class="field">
+								<label>Deposit</label>
+								<textarea name="postback-deposit">crm_userId =%user_id%&#10;subid =%p%</textarea>
+							</div>
+						</div>
 					</div>
+					<div class="row postback-row">
+						<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 postback-type-div">
+							<label>Postback type</label>
+							<select name="postback-type">
+								<option value="0">S2S (http://..)</option>
+							</select>
+						</div>
+						<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 postback-country-div">
+							<label>To countries</label>
+							<select name="postback-country">
+								<option value="0">Select countries</option>
+							</select>
+						</div>
+						<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 postback-options-div">
+							<label>Sending options</label>
+							<select name="postback-options">
+								<option value="0">Select</option>
+							</select>
+						</div>
+					</div>
+					<div class="row postback-row postback-row-send">
+						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 postback-statuses-div">
+							<p class="p-bold p-red">NOT</p>
+							<label>send statuses</label>
+							<div class="checkbox-list">
+								<div class="newCheckbox">
+									<input type="checkbox" name="postback-statuses" id="status01">
+									<label for="status01"></label><p>statusOne</p><a class="links-icon">Y</a>
+								</div>
+								<div class="newCheckbox">
+									<input type="checkbox" name="postback-statuses" id="status02">
+									<label for="status02"></label><p>statusTwo</p><a class="links-icon">Y</a>
+								</div>
+								<div class="newCheckbox">
+									<input type="checkbox" name="postback-statuses" id="status03">
+									<label for="status03"></label><p>statusThree</p><a class="links-icon">Y</a>
+								</div>
+								<div class="newCheckbox">
+									<input type="checkbox" name="postback-statuses" id="status04">
+									<label for="status04"></label><p>statusFour</p><a class="links-icon">Y</a>
+								</div>
+								<div class="newCheckbox">
+									<input type="checkbox" name="postback-statuses" id="status05">
+									<label for="status05"></label><p>statusFive</p><a class="links-icon">Y</a>
+								</div>
+								<div class="newCheckbox">
+									<input type="checkbox" name="postback-statuses" id="status06">
+									<label for="status06"></label><p>statusSix</p><a class="links-icon">Y</a>
+								</div>
+								<div class="newCheckbox">
+									<input type="checkbox" name="postback-statuses" id="status07">
+									<label for="status07"></label><p>checkNumber</p><a class="links-icon">Y</a>
+								</div>
+								<div class="newCheckbox">
+									<input type="checkbox" name="postback-statuses" id="status08">
+									<label for="status08"></label><p>noAnswer</p><a class="links-icon">Y</a>
+								</div>
+								<div class="newCheckbox">
+									<input type="checkbox" name="postback-statuses" id="status09">
+									<label for="status09"></label><p>noCall</p><a class="links-icon">Y</a>
+								</div>
+								<div class="newCheckbox">
+									<input type="checkbox" name="postback-statuses" id="status10">
+									<label for="status10"></label><p>callAgain</p><a class="links-icon">Y</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 postback-send-div">
+							<label>Send after:</label>
+							<div class="min-max">
+								<p>0</p><p>168</p>
+							</div>
+							<input type="range" name="postbackSend" id="rangeInput" min="0" max="168" step="1" value="104">
+							<div class="range-output">
+								<output name="hoursSend" id="rangeValue">104</output>
+								<p id="hoursPosition">&nbsp;hours</p>
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="row-with-button">
+					<button class="button-active add-button">Create Pixel</button>
 				</div>
 			</div>
 		</div>

@@ -83,3 +83,13 @@ var chart = new Chart(chartOne, {
 		}
 	}
 });
+
+/* range fill */
+document.getElementById("rangeInput").oninput = function() {
+	this.style.background = 'linear-gradient(to right, #F58220 0%, #F58220 '+ this.value/168*100 +'%, #E3E3E3 ' + this.value/168*100 + '%, #E3E3E3 100%)';
+	rangeValue.value = rangeInput.value;
+	var outputStyle = document.getElementById("rangeValue").style;
+	outputStyle.left = 'calc(' + this.value/168*100 + '% - ' + this.value/168*60 + 'px)';
+	var hoursStyle = document.getElementById("hoursPosition").style;
+	hoursStyle.left = 'calc(' + this.value/168*100 + '% - ' + (this.value/168*60-20) + 'px)'
+}

@@ -9,6 +9,7 @@
 	justify-content: flex-end;
 	background-color: $topbar-background-color;
 	z-index: 1;
+	border-bottom: 1px solid $topbar-border-color;
 }
 
 .topbar-icon {
