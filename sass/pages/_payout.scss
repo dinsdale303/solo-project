@@ -1,3 +1,39 @@
-* {
-	box-sizing: border-box;
+.view-payout {
+	table {
+		[class*="payout-td"] {
+			padding-left: 5px;
+		}
+		.payout-td1, .payout-td2 {
+			width: 30%;
+		}
+		.payout-td3 {
+			width: 25%;
+		}
+		.payout-td4 {
+			width: 14%;
+		}
+	}
+	.scroll-wrapper {
+		display: block;
+		width: calc(100% - 40px);
+		overflow-x: auto;
+		margin: 20px;
+	}
+	.scroll-wrapper table {
+		min-width: 650px;
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+@media(max-width: 767px) {
+}
+
+@media(min-width: 768px) {
+}
+
+@media(min-width: 992px) {
+}
+
+@media(min-width: 1200px) {
 }

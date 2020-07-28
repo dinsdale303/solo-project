@@ -5,11 +5,15 @@
 	padding: 20px;
 	a {
 		padding: 15px 20px;
+		&:hover {
+			cursor: pointer;
+		}
 	}
 	.pagination-active {
 		color: $paragraph-color;
 		background-color: $table-border-background-hover;
 		border-radius: 2px;
+		font-weight: bold;
 	}
 }
 
