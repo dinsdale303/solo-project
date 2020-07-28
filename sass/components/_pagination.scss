@@ -1,0 +1,31 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	a {
+		padding: 15px 20px;
+	}
+	.pagination-active {
+		color: $paragraph-color;
+		background-color: $table-border-background-hover;
+		border-radius: 2px;
+	}
+}
+
+@media(max-width: 767px) {
+	.pagination {
+		a {
+			padding: 10px 15px;
+		}
+	}
+}
+
+@media(min-width: 768px) {
+}
+
+@media(min-width: 992px) {
+}
+
+@media(min-width: 1200px) {
+}

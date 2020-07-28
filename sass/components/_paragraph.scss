@@ -61,3 +61,9 @@ a {
 	@extend .links-icon;
 	color: $links-icon-color2;
 }
+
+.table-icon {
+	font-family: $icon-font;
+	font-size: $table-text-size;
+	margin-left: 10px;
+}

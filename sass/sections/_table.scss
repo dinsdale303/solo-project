@@ -7,7 +7,7 @@ table {
 tr {
 	height: 60px;
 	width: 100%;
-	&:hover {
+	&:not(.table-header-row):hover {
 		background-color: $table-border-background-hover;
 		cursor: pointer;
 		.td3 {
@@ -18,7 +18,38 @@ tr {
 	}
 }
 
-td {
+th, td {
 	padding: 0;
 	border-bottom: 1px solid $table-border;
+	text-align: left
+}
+
+.table-header-div {
+	display: inline-block;
+	padding: 2px 5px;
+	.table-icon {
+		visibility: hidden;
+		font-size: $table-icon-size;
+	}
+	p {
+		display: inline-block;
+	}
+	&:hover {
+		background-color: $table-border-background-hover;
+		cursor: pointer;
+		.table-title-text {
+			color: $paragraph-color2;
+		}
+		.table-icon {
+			visibility: visible;
+		}
+	}
+}
+
+.table-title-text, .table-text {
+	font-size: $table-text-size;
+}
+
+.table-text {
+	color: $paragraph-color2
 }
