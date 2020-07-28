@@ -76,15 +76,15 @@
 						<h3>general statistic</h3>
 					</div>
 				</div>
-				<div class="row general-calendar-row">
+				<div class="row calendar-row">
 					<div class="col-sm-1 col-md-2 col-lg-4 col-xl-4">
 					</div>
 					<div class="col-sm-10 col-md-8 col-lg-4 col-xl-4">
-						<div class="general-calendar">
-							<div class="general-calendar-line">
-								<p class="general-calendar-text general-calendar-start">16.05.2016.</p>
-								<p class="general-calendar-text general-calendar-end">16.05.2016.</p>
-								<p class="general-calendar-text calendar-icon">H</p>								
+						<div class="div-calendar">
+							<div class="calendar-line">
+								<p class="calendar-text calendar-start">16.05.2016.</p>
+								<p class="calendar-text calendar-end">16.05.2016.</p>
+								<p class="calendar-text calendar-icon">H</p>								
 							</div>
 							<button class="button-active calendar-button button-icon">X</button>
 						</div>
@@ -279,11 +279,90 @@
 						<h3>personal data</h3>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-						<p>personal data</p>
+				<form action="#" method="POST">
+					<div class="row personal-data-row personal-data-name-row">
+						<div class="col-sm-0 col-md-1 col-lg-2 col-xl-3">
+						</div>
+						<div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
+							<div class="field">
+								<label>Name</label>
+								<input type="text" name="user-name" value="Leonardo" required>
+							</div>
+							<div class="field">
+								<label>Surname</label>
+								<input type="text" name="user-surname" value="Dicaprio" required>
+							</div>
+							<div class="field">
+								<label>E-mail</label>
+								<input type="email" name="user-mail" value="leo@gmail.com" required>
+							</div>
+							<div class="field">
+								<label>Phone number</label>
+								<input type="tel" name="user-phone" value="+1 432 555 00 44" pattern="[+][0-9]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
+							</div>
+						</div>
+						<div class="col-sm-0 col-md-1 col-lg-2 col-xl-3">
+						</div>
 					</div>
-				</div>
+					<div class="row personal-data-row personal-data-contact-row">
+						<div class="col-sm-0 col-md-1 col-lg-2 col-xl-3">
+						</div>
+						<div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
+							<div class="field">
+								<label>Skype</label>
+								<input type="text" name="user-skype" value="Leonardo.D">
+							</div>
+							<div class="field">
+								<label>ICQ</label>
+								<input type="text" name="user-icq">
+							</div>
+							<div class="field">
+								<label>Msn</label>
+								<input type="text" name="user-msn">
+							</div>
+						</div>
+						<div class="col-sm-0 col-md-1 col-lg-2 col-xl-3">
+						</div>
+					</div>
+					<div class="row personal-data-row personal-data-wallet-row">
+						<div class="col-sm-0 col-md-1 col-lg-2 col-xl-3">
+						</div>
+						<div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
+							<div class="field">
+								<label>Wallet</label>
+								<select name="user-wallet">
+									<option value="bank">Bank account</option>
+									<option value="paypal">PayPal</option>
+									<option value="skrill">Skrill</option>
+									<option value="neteller">Neteller</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-0 col-md-1 col-lg-2 col-xl-3">
+						</div>
+					</div>
+					<div class="row personal-data-row personal-data-password-row">
+						<div class="col-sm-0 col-md-1 col-lg-2 col-xl-3">
+						</div>
+						<div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
+							<div class="field">
+								<label>Password</label>
+								<input type="password" name="user-password">
+							</div>
+							<div class="field">
+								<label>Repeat</label>
+								<input type="password" name="user-password-repeat">
+							</div>
+						</div>
+						<div class="col-sm-0 col-md-1 col-lg-2 col-xl-3">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 button-row">
+							<button type="submit" class="button-active save-button">Save</button>
+						</div>
+					</div>
+				</form>
 			</div>
 	<!-- page payout -->
 			<div class="view-payout view-page page-inactive" id="viewPayout">

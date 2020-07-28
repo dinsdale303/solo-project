@@ -3,6 +3,7 @@ button {
 	outline: none;
 	color: $button-text-color;
 	font-size: $button-font-size;
+	font-family: $button-font;
 	border-radius: 5px;
 }
 
@@ -28,6 +29,13 @@ button {
 
 .add-button {
 	width: 120px;
+	height: 35px;
+	font-size: $add-button-text-size;
+	margin: 20px 0;
+}
+
+.save-button {
+	width: 100px;
 	height: 35px;
 	font-size: $add-button-text-size;
 	margin: 20px 0;

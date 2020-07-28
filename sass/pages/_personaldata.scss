@@ -1,3 +1,75 @@
-* {
-	box-sizing: border-box;
+.view-personal-data {
+	.personal-data-row {
+		padding: 40px 0;
+		border-bottom: 1px solid $container-background-color;
+	}
+	.field {
+		padding: 0 50px 10px 0px;
+	}
+	label {
+		display: inline-block;
+		width: 30%;
+		height: 40px;
+		font-family: $paragraph-font;
+		color: $paragraph-color;
+		font-size: $paragraph-font-size;
+		font-weight: bold;
+	}
+	input, select {
+		display: inline-block;
+		width: 69%;
+		height: 40px;
+		border: 1px solid $container-background-color;
+		border-radius: 4px;
+		background-color: $page-background-color;
+		color: $paragraph-color2;
+		font-size: $input-font-size;
+		padding-left: 15px;
+		&:focus {
+			outline: none;
+			border-color: $focus-input-border-color;
+		}
+		&:invalid {
+			background-color: $input-invalid-color;
+		}
+	}
+}
+
+@media(max-width: 767px) {
+	.view-personal-data {
+		label, input, select {
+			display: block;
+			width: 100%;
+		}
+		label {
+			height: 20px;
+		}
+		.field {
+			padding-right: 100px;
+		}
+	}
+}
+
+@media(min-width: 768px) {
+	.view-personal-data {
+		.field {
+			padding-right: 25px;
+		}
+	}
+}
+
+@media(min-width: 992px) {
+	.view-personal-data {
+		.field {
+			padding-right: 50px;
+		}
+	}
+}
+
+@media(min-width: 1200px) {
+	.view-personal-data {
+		.field {
+			padding-right: 75px;
+		}
+	}
 }

@@ -1,42 +1,4 @@
 .view-general {
-	.general-calendar {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	.general-calendar-text {
-		display: flex;
-		align-items: center;
-		margin: 0;
-		width: auto;
-		color: $paragraph-color2;
-		font-size: 14px;
-		height: 30px;
-	}
-	.general-calendar-line {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 5px 15px;
-		border: 1px solid $container-background-color;
-		border-radius: 5px;
-		width: 320px;
-	}
-	.general-calendar-end {
-		padding-left: 15px;
-		border-left: 1px solid $container-background-color;
-	}
-	.general-calendar-row {
-		display: flex;
-		align-items: center;
-		height: 100px;
-		border-bottom: 1px solid $container-background-color;
-	}
-	.calendar-icon {
-		font-family: $icon-font;
-		font-size: $calendar-icon-size;
-		color: $calendar-icon-color;
-	}
 	.general-stats-row {
 		margin: 20px 0 60px 0;
 	}
@@ -50,11 +12,6 @@
 	}
 	.general-stat-number {
 		color: $paragraph-color2;
-	}
-	.calendar-button {
-		height: 40px;
-		width: 40px;
-		margin-left: 20px;
 	}
 	canvas {
 		max-height: 500px;

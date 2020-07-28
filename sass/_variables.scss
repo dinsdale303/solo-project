@@ -1,6 +1,6 @@
 /* colors */
 $white1: #FFFFFF;
-$white2: #F5F5F2;
+$white2: #FAFAFA;
 $black1: #000000;
 $black2: #333333;
 $grey1: #979797;
@@ -48,6 +48,9 @@ $links-icon-color1: $orange1;
 $links-icon-color2: $grey1;
 $table-border: $grey2;
 $table-border-background-hover: $grey3;
+$focus-input-border-color: $grey1;
+$input-valid-color: $green2;
+$input-invalid-color: $red2;
 
 
 /* font sizes */
@@ -68,6 +71,7 @@ $button-font-size: 14px;
 $add-button-text-size: 18px;
 $calendar-icon-size: 12px;
 $links-icon-size: 14px;
+$input-font-size: 16px;
 
 
 /* fonts */
@@ -93,3 +97,4 @@ $icon-font: $glypher;
 $header-font: $arial;
 $paragraph-font: $tahoma;
 $links-font: $tahoma;
+$button-font: $tahoma;

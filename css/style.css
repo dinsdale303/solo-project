@@ -372,7 +372,7 @@ template {
 }
 
 .view-page {
-  background-color: #F5F5F2;
+  background-color: #FAFAFA;
 }
 
 @media (max-width: 767px) {
@@ -712,6 +712,7 @@ button {
   outline: none;
   color: #FFFFFF;
   font-size: 14px;
+  font-family: Tahoma, Geneva, sans-serif;
   border-radius: 5px;
 }
 
@@ -739,6 +740,13 @@ button {
 
 .add-button {
   width: 120px;
+  height: 35px;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.save-button {
+  width: 100px;
   height: 35px;
   font-size: 18px;
   margin: 20px 0;
@@ -1080,8 +1088,7 @@ td {
   border-bottom: 1px solid #BABABA;
 }
 
-/* pages / views */
-.view-general .general-calendar {
+.div-calendar {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -1090,7 +1097,7 @@ td {
       justify-content: center;
 }
 
-.view-general .general-calendar-text {
+.calendar-text {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -1102,7 +1109,7 @@ td {
   height: 30px;
 }
 
-.view-general .general-calendar-line {
+.calendar-line {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -1115,12 +1122,12 @@ td {
   width: 320px;
 }
 
-.view-general .general-calendar-end {
+.calendar-end {
   padding-left: 15px;
   border-left: 1px solid #E3E3E3;
 }
 
-.view-general .general-calendar-row {
+.calendar-row {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -1129,12 +1136,19 @@ td {
   border-bottom: 1px solid #E3E3E3;
 }
 
-.view-general .calendar-icon {
+.calendar-icon {
   font-family: glyphterFont, sans-serif;
   font-size: 12px;
   color: #000000;
 }
 
+.calendar-button {
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+}
+
+/* pages / views */
 .view-general .general-stats-row {
   margin: 20px 0 60px 0;
 }
@@ -1152,12 +1166,6 @@ td {
 
 .view-general .general-stat-number {
   color: #000000;
-}
-
-.view-general .calendar-button {
-  height: 40px;
-  width: 40px;
-  margin-left: 20px;
 }
 
 .view-general canvas {
@@ -1272,8 +1280,75 @@ td {
   }
 }
 
-* {
-  box-sizing: border-box;
+.view-personal-data .personal-data-row {
+  padding: 40px 0;
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.view-personal-data .field {
+  padding: 0 50px 10px 0px;
+}
+
+.view-personal-data label {
+  display: inline-block;
+  width: 30%;
+  height: 40px;
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #979797;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.view-personal-data input, .view-personal-data select {
+  display: inline-block;
+  width: 69%;
+  height: 40px;
+  border: 1px solid #E3E3E3;
+  border-radius: 4px;
+  background-color: #FAFAFA;
+  color: #000000;
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+.view-personal-data input:focus, .view-personal-data select:focus {
+  outline: none;
+  border-color: #979797;
+}
+
+.view-personal-data input:invalid, .view-personal-data select:invalid {
+  background-color: #DE5252;
+}
+
+@media (max-width: 767px) {
+  .view-personal-data label, .view-personal-data input, .view-personal-data select {
+    display: block;
+    width: 100%;
+  }
+  .view-personal-data label {
+    height: 20px;
+  }
+  .view-personal-data .field {
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .view-personal-data .field {
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .view-personal-data .field {
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .view-personal-data .field {
+    padding-right: 75px;
+  }
 }
 
 * {
