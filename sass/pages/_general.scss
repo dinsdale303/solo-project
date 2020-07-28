@@ -62,7 +62,6 @@
 }
 
 @media(max-width: 767px) {
-	@include grid('sm');
 	.p-bold {
 		margin-left: 20px;
 	}
@@ -72,7 +71,6 @@
 }
 
 @media(min-width: 768px) {
-	@include grid('md');
 	.p-bold {
 		margin-left: 0;
 	}
@@ -82,9 +80,7 @@
 }
 
 @media(min-width: 992px) {
-	@include grid('lg');
 }
 
 @media(min-width: 1200px) {
-	@include grid('xl');
 }
