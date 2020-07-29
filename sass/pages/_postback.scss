@@ -34,6 +34,9 @@
 		border-top: 1px solid $container-background-color;
 		border-bottom: 1px solid $container-background-color;
 	}
+	.new-checkbox p {
+		min-width: 100px;
+	}
 	.min-max {
 		padding: 10px 0;
 		display: flex;
@@ -70,6 +73,9 @@
 	.postback-send-div {
 		border-top: 1px solid $container-background-color;
 		margin-bottom: 70px;
+	}
+	.new-checkbox {
+		max-width: calc(100%-20px);
 	}
 }
 

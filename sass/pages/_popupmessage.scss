@@ -1,0 +1,106 @@
+.popup-message {
+	.row {
+		width: 100%;
+		white-space: nowrap;
+		overflow-x: hidden;
+		p.close-modal {
+			background-color: $page-background-color;
+		}
+	}
+	.message-manager {
+		padding: 10px 0 10px 20px;
+		display: flex;
+		.message-manager-div {
+			margin: 10px 0 10px 20px;
+			display: block;
+			white-space: nowrap;
+			overflow-x: hidden;
+			p {
+				margin-left: 0;
+				font-size: $menu-header-font-size;
+				color: $paragraph-color2;
+			}
+		}
+	}
+	.message-foto {
+		border-radius: 50%;
+	}
+	.message-row {
+		border-top: 1px solid $container-background-color;
+		border-bottom: 1px solid $container-background-color;
+		height: 300px;
+		padding: 20px;
+		overflow-y: auto;
+		p {
+			display: table;
+			padding: 0 20px;
+			line-height: 40px;
+		}
+		.p-up {
+			margin: 20px 0;
+			border-radius: 0 5px 5px 5px;
+			position: relative;
+			background-color: $bubble-up-color;
+			color: $paragraph-color2;
+		}
+		.p-up:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 5px;
+			width: 0;
+			height: 0;
+			border: 10px solid transparent;
+			border-bottom-color: $bubble-up-color;
+			border-top: 0;
+			border-left: 0;
+			margin-left: -5px;
+			margin-top: -10px;
+		}
+		.p-down {
+			margin: 20px 0;
+			border-radius: 5px 5px 0 5px;
+			position: relative;
+			background-color: $bubble-down-color;
+			color: $button-text-color;
+		}
+		.p-down:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: calc(100% - 5px);
+			width: 0;
+			height: 0;
+			border: 10px solid transparent;
+			border-top-color: $bubble-down-color;
+			border-bottom: 0;
+			border-right: 0;
+			margin-left: -5px;
+			margin-bottom: -10px;
+		}
+	}
+	.message-button-row {
+		position: relative;
+		display: flex;
+		margin: 20px 0;
+		height: 50px;
+		align-items: center;
+		input {
+			height: 35px;
+			color: $inactive-input-color;
+			margin-left: 20px;
+			padding-left: 40px;
+			width: calc(100% - 130px);
+		}
+		.save-button {
+			margin-left: 10px;
+			margin-right: 20px;
+		}
+		.p-send {
+			position: absolute;
+			font-size: $menu-icon-font-size;
+			top: 18px;
+			left: 28px;
+		}
+	}
+}

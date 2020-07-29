@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Modul 9-12</title>
+		<title>just do it</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
@@ -19,14 +19,14 @@
 				<div class="new-message dot-orange-small"></div>
 			</div>
 			<div class="topbar-part">
-				<p class="topbar-icon topbar-item">V</p>
+				<p class="topbar-icon topbar-item cursor-change" onclick="openModal('#popupLogin')">V</p>
 				<a class="topbar-username">Leonardo Dicaprio</a>
 			</div>
-			<p class="topbar-icon topbar-part">W</p>
+			<p class="topbar-icon topbar-part cursor-change" onclick="openModal('#popupQuit')">W</p>
 		</nav>
 <!-- sidebar menu -->		
 		<div>
-			<input type="checkbox" id="toggle" />
+			<input type="checkbox" id="toggle">
 			<nav class="sidebar">
 				<div class="menu-head">
 					<p class="menu-header">Just do it</p>
@@ -43,10 +43,10 @@
 				</ul>
 				<hr class="menu-end">
 				<h4 class="manager-header">your manager</h4>
-				<div class="manager">
-					<img src="//placehold.it/40x40" alt="foto" class="manager-foto">
+				<div class="manager cursor-change">
+					<img src="//picsum.photos/id/237/40" alt="foto" class="manager-foto" onclick="openModal('#popupMessage')">
 					<div class="manager-online dot-green"></div>
-					<a>Mikhael E.</a>
+					<a onclick="openModal('#popupMessage')">Mikhael E.</a>
 				</div>
 	<!-- topbar moved to sidebar on phones -->
 				<nav class="topbar-on-phone">
@@ -59,9 +59,9 @@
 						<p class="topbar-icon topbar-part">P</p>
 						<div class="new-message dot-orange-small"></div>
 					</div>
-					<p class="topbar-icon topbar-part">W</p>
+					<p class="topbar-icon topbar-part cursor-change" onclick="openModal('#popupQuit')">W</p>
 					<div class="topbar-part">
-						<p class="topbar-icon topbar-item">V</p>
+						<p class="topbar-icon topbar-item cursor-change" onclick="openModal('#popupLogin')">V</p>
 						<a class="topbar-username">Leonardo Dicaprio</a>
 					</div>				
 				</nav>
@@ -345,7 +345,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 button-row">
-						<button class="button-active add-button">+ add new</button>
+						<button class="button-active add-button cursor-change" onclick="openModal('#popupAddLinks')">+ add new</button>
 					</div>
 				</div>
 				<div class="row links-row">
@@ -410,7 +410,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 button-row">
-						<button class="button-active add-button add-button-bottom">+ add new</button>
+						<button class="button-active add-button add-button-bottom cursor-change" onclick="openModal('#popupAddLinks')">+ add new</button>
 					</div>
 				</div>
 			</div>
@@ -423,7 +423,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 button-row">
-						<button class="button-active add-button">+ add new</button>
+						<button class="button-active add-button cursor-change" onclick="openModal('#popupAddBanners')">+ add new</button>
 					</div>
 				</div>
 				<div class="row banners-row">
@@ -468,7 +468,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 button-row">
-						<button class="button-active add-button add-button-bottom">+ add new</button>
+						<button class="button-active add-button add-button-bottom cursor-change" onclick="openModal('#popupAddBanners')">+ add new</button>
 					</div>
 				</div>
 			</div>
@@ -727,43 +727,43 @@
 							<p class="p-bold p-red">NOT</p>
 							<label>send statuses</label>
 							<div class="checkbox-list">
-								<div class="newCheckbox">
+								<div class="new-checkbox">
 									<input type="checkbox" name="postback-statuses" id="status01">
 									<label for="status01"></label><p>statusOne</p><a class="links-icon">Y</a>
 								</div>
-								<div class="newCheckbox">
+								<div class="new-checkbox">
 									<input type="checkbox" name="postback-statuses" id="status02">
 									<label for="status02"></label><p>statusTwo</p><a class="links-icon">Y</a>
 								</div>
-								<div class="newCheckbox">
+								<div class="new-checkbox">
 									<input type="checkbox" name="postback-statuses" id="status03">
 									<label for="status03"></label><p>statusThree</p><a class="links-icon">Y</a>
 								</div>
-								<div class="newCheckbox">
+								<div class="new-checkbox">
 									<input type="checkbox" name="postback-statuses" id="status04">
 									<label for="status04"></label><p>statusFour</p><a class="links-icon">Y</a>
 								</div>
-								<div class="newCheckbox">
+								<div class="new-checkbox">
 									<input type="checkbox" name="postback-statuses" id="status05">
 									<label for="status05"></label><p>statusFive</p><a class="links-icon">Y</a>
 								</div>
-								<div class="newCheckbox">
+								<div class="new-checkbox">
 									<input type="checkbox" name="postback-statuses" id="status06">
 									<label for="status06"></label><p>statusSix</p><a class="links-icon">Y</a>
 								</div>
-								<div class="newCheckbox">
+								<div class="new-checkbox">
 									<input type="checkbox" name="postback-statuses" id="status07">
 									<label for="status07"></label><p>checkNumber</p><a class="links-icon">Y</a>
 								</div>
-								<div class="newCheckbox">
+								<div class="new-checkbox">
 									<input type="checkbox" name="postback-statuses" id="status08">
 									<label for="status08"></label><p>noAnswer</p><a class="links-icon">Y</a>
 								</div>
-								<div class="newCheckbox">
+								<div class="new-checkbox">
 									<input type="checkbox" name="postback-statuses" id="status09">
 									<label for="status09"></label><p>noCall</p><a class="links-icon">Y</a>
 								</div>
-								<div class="newCheckbox">
+								<div class="new-checkbox">
 									<input type="checkbox" name="postback-statuses" id="status10">
 									<label for="status10"></label><p>callAgain</p><a class="links-icon">Y</a>
 								</div>
@@ -787,6 +787,491 @@
 				</div>
 			</div>
 		</div>
+<!-- popups -->
+<div class="overlay" id="overlay">
+	<!-- popup add banners -->
+	<div class="modal popup-add-banners modal-add" id="popupAddBanners">
+		<div class="page-header">
+			<div class="row">
+				<h3>add banners</h3>
+				<p class="btn-close close-modal cursor-change">I</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 add-banners-scheme-div">
+				<label>Scheme name</label>
+				<input type="text" name="banners-scheme" value="Name">
+			</div>
+			<div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 add-banners-compain-div">
+				<label>Compain</label>
+				<select name="banners-compain">
+					<option value="0">Select</option>
+				</select>
+			</div>
+			<div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 add-banners-language-div">
+				<label>Language</label>
+				<select name="banners-language" id="languageSelect2" onchange="selectLang('languageSelect2')" class="language">
+					<option value="EN">EN</option>
+					<option value="PL">PL</option>
+					<option value="DE">DE</option>
+					<option value="FR">FR</option>
+					<option value="ES">ES</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 add-banners-w-h-div">
+				<label>Weight-height</label>
+				<select name="banners-w-h">
+					<option value="0">Select</option>
+				</select>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 add-banners-design-div">
+				<label>Design</label>
+				<select name="banners-design">
+					<option value="0">Select</option>
+				</select>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 add-banners-file-div">
+				<label>File type</label>
+				<select name="banners-file">
+					<option value="0">All</option>
+				</select>
+			</div>
+		</div>
+		<div class="row checkbox-row">
+			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 add-banners-banner-div">
+				<label>Select banners</label>
+				<div class="checkbox-list">
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-banners" id="banner01">
+						<label for="banner01"></label><p>Banner one</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-banners" id="banner02">
+						<label for="banner02"></label><p>Banner two</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-banners" id="banner03">
+						<label for="banner03"></label><p>Banner three</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-banners" id="banner04">
+						<label for="banner04"></label><p>Banner four</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-banners" id="banner05">
+						<label for="banner05"></label><p>Banner five</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-banners" id="banner06">
+						<label for="banner06"></label><p>Banner main</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-banners" id="banner07">
+						<label for="banner07"></label><p>Sign up banner</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-banners" id="banner08">
+						<label for="banner08"></label><p>Left banner</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-banners" id="banner09">
+						<label for="banner09"></label><p>Right banner</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-banners" id="banner10">
+						<label for="banner10"></label><p>Bottom banner</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-banners" id="banner11">
+						<label for="banner11"></label><p>Long banner</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-banners" id="banner12">
+						<label for="banner12"></label><p>Personal cabinet banner</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-banners" id="banner13">
+						<label for="banner13"></label><p>Popup banner</p><a class="links-icon">Y</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 add-banners-website-div">
+				<label>Select websites</label>
+				<div class="checkbox-list">
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-websites" id="websiteB01">
+						<label for="websiteB01"></label><p>Website One</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-websites" id="websiteB02">
+						<label for="websiteB02"></label><p>Website Two</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-websites" id="websiteB03">
+						<label for="websiteB03"></label><p>Website Three</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-websites" id="websiteB04">
+						<label for="websiteB04"></label><p>Website Four</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-websites" id="websiteB05">
+						<label for="websiteB05"></label><p>Website Five</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-websites" id="websiteB06">
+						<label for="websiteB06"></label><p>Landing page Money</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-websites" id="websiteB07">
+						<label for="websiteB07"></label><p>LP Your choise</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-websites" id="websiteB08">
+						<label for="websiteB08"></label><p>LP Wallet</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-websites" id="websiteB09">
+						<label for="websiteB09"></label><p>E-Shop 01</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-websites" id="websiteB10">
+						<label for="websiteB10"></label><p>Toy Store</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-websites" id="websiteB11">
+						<label for="websiteB11"></label><p>Book Store</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-websites" id="websiteB12">
+						<label for="websiteB12"></label><p>Charity</p><a class="links-icon">Y</a>
+					</div>
+					<div class="new-checkbox">
+						<input type="checkbox" name="addbanners-websites" id="websiteB13">
+						<label for="websiteB13"></label><p>LP Icons Store</p><a class="links-icon">Y</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="add-banners-button-row">
+			<input type="text" value="Generated link" disabled>
+			<button class="button-inactive copy-button"><span class="text-icon">L&nbsp;&nbsp;</span>&nbsp;&nbsp;Copy link</button>
+			<button class="close-modal button-active save-button">Save</button>
+		</div>
+	</div>
+	<!-- popup add links -->
+	<div class="modal popup-add-links modal-add" id="popupAddLinks">
+		<div class="page-header">
+			<div class="row">
+				<h3>add url</h3>
+				<p class="btn-close close-modal cursor-change">I</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 add-links-scheme-div">
+				<label>Scheme name</label>
+				<input type="text" name="links-scheme" value="Name">
+			</div>
+			<div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 add-links-mid-div">
+				<label>&nbsp;</label>
+				<select name="links-mid">
+					<option value="0">Select</option>
+				</select>
+			</div>
+			<div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 add-links-language-div">
+				<label>Language</label>
+				<select name="links-language" id="languageSelect1" onchange="selectLang('languageSelect1')" class="language">
+					<option value="EN">EN</option>
+					<option value="PL">PL</option>
+					<option value="DE">DE</option>
+					<option value="FR">FR</option>
+					<option value="ES">ES</option>
+				</select>
+			</div>
+		</div>
+		<div class="row checkbox-row">
+			<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 add-links-website-div">
+				<label>Select websites</label>
+				<div class="checkbox-list">
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL01">
+							<label for="websiteL01"></label><p>Website One</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL02">
+							<label for="websiteL02"></label><p>Website Two</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL03">
+							<label for="websiteL03"></label><p>Website Three</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL04">
+							<label for="websiteL04"></label><p>Website Four</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL05">
+							<label for="websiteL05"></label><p>Website Five</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL06">
+							<label for="websiteL06"></label><p>Website Six</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL07">
+							<label for="websiteL07"></label><p>Landing page Money</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL08">
+							<label for="websiteL08"></label><p>Mobile app</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL09">
+							<label for="websiteL09"></label><p>Your second site</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL10">
+							<label for="websiteL10"></label><p>LP Your choise</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL11">
+							<label for="websiteL11"></label><p>LP Senator free signals</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL12">
+							<label for="websiteL12"></label><p>Your second LP</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL13">
+							<label for="websiteL13"></label><p>LP Wallet</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL14">
+							<label for="websiteL14"></label><p>LP DE Your choise</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL15">
+							<label for="websiteL15"></label><p>Landing page Money</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL16">
+							<label for="websiteL16"></label><p>E-Shop 01</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL17">
+							<label for="websiteL17"></label><p>Invest wisely</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL18">
+							<label for="websiteL18"></label><p>LP Your choise</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL19">
+							<label for="websiteL19"></label><p>Toy Store</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL20">
+							<label for="websiteL20"></label><p>Toy Store LP Sign up page</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL21">
+							<label for="websiteL21"></label><p>LP Wallet</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL22">
+							<label for="websiteL22"></label><p>Book Store</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL23">
+							<label for="websiteL23"></label><p>Senator Account types</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL24">
+							<label for="websiteL24"></label><p>E-Shop 01</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL25">
+							<label for="websiteL25"></label><p>Charity</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL26">
+							<label for="websiteL26"></label><p>Senator Mobile app</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL27">
+							<label for="websiteL27"></label><p>Toy Store</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL28">
+							<label for="websiteL28"></label><p>LP Icons Store</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL29">
+							<label for="websiteL29"></label><p>Senator Store</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL30">
+							<label for="websiteL30"></label><p>Book Store</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL31">
+							<label for="websiteL31"></label><p>Templates Store</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL32">
+							<label for="websiteL32"></label><p>Senator April Promo</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL33">
+							<label for="websiteL33"></label><p>Mobile app</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL34">
+							<label for="websiteL34"></label><p>Random text</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL35">
+							<label for="websiteL35"></label><p>Language Learning LP</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+					<div class="add-links-website-list">
+						<div class="new-checkbox">
+							<input type="checkbox" name="addlinks-websites" id="websiteL36">
+							<label for="websiteL36"></label><p>LP Senator free signals</p><a class="links-icon">Y</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="add-links-button-row">
+			<input type="text" value="Generated link" disabled>
+			<button class="button-inactive copy-button" disabled><span class="text-icon">L&nbsp;&nbsp;</span>&nbsp;&nbsp;Copy link</button>
+			<button class="close-modal button-active save-button">Save</button>
+		</div>
+	</div>
+	<!-- popup login -->
+	<div class="modal popup-login" id="popupLogin">
+		<div class="page-header">
+			<div class="row">
+				<h3>login</h3>
+			</div>
+		</div>
+		<p class="text-icon p-login">M</p>
+		<input type="text" value="login name" onclick="this.value=''" class="login-input">
+		<p class="text-icon p-password">Q</p>
+		<input type="text" value="password" id="loginPass" onclick="passChangeType()" class="password-input">
+		<button class="close-modal button-active btn-button">Enter</button>
+	</div>
+	<!-- popup message -->
+	<div class="modal popup-message modal-add" id="popupMessage">
+		<div class="page-header">
+			<div class="row">
+				<h3>online chat with your personal manager</h3>
+				<p class="btn-close close-modal cursor-change">I</p>
+			</div>
+		</div>
+		<div class="message-manager">
+			<img src="//picsum.photos/id/237/80" alt="foto" class="message-foto">
+			<div class="message-manager-div">
+				<p class="p-bold">Michael E.</p>
+				<button class="button-online">online</button>
+			</div>
+		</div>
+		<div class="message-row">
+			<p class="p-up">Hello. Can I help you?</p>
+			<p class="p-down">Hello! I would like to know about Postback.</p>
+			<p class="p-up">Ok. 5 min..</p>
+		</div>
+		<div class="message-button-row">
+			<p class="text-icon p-send">N</p>
+			<input type="text" value="Enter the message.." onclick="this.value=''">
+			<button class="close-modal button-active save-button">Send</button>
+		</div>
+	</div>
+	<!-- popup quit -->
+	<div class="modal popup-quit" id="popupQuit">
+		<div class="page-header">
+			<div class="row">
+				<p class="p-bold">Do you really want to quit?</p>
+			</div>
+		</div>
+		<div class="quit-button-row">
+			<button class="close-modal button-inactive2 add-button">Cancel</button>
+			<button class="close-modal button-active save-button">Quit</button>
+		</div>
+	</div>
+</div>
 <!-- scripts -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 		<script src="js/script.js"></script>

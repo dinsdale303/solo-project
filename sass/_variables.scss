@@ -22,8 +22,8 @@ $yellow1: #FFFF00;
 $button-text-color: $white1;
 $active-button-color: $orange1;
 $active-button-color-hover: $orange2;
-$inactive-button-color: $grey1;
-$inactive-button-color-hover: $grey3;
+$inactive-button-color: $grey3;
+$inactive-button-color-hover: $grey1;
 $menu-background-color: $black1;
 $menu-text-color: $grey1;
 $menu-background-color-hover: $black2;
@@ -34,6 +34,7 @@ $header-text-color: $grey1;
 $paragraph-color: $grey1;
 $paragraph-color2: $black1;
 $paragraph-alt-color: $red1;
+$inactive-input-color: $grey2;
 $link-color: $blue1;
 $dot-green: $green1;
 $dot-orange: $orange1;
@@ -57,6 +58,8 @@ $scrollbar-background-color: $grey3;
 $checkbox-checked-color: $green1;
 $checkbox-unchecked-color: $white1;
 $range-color: $orange1;
+$bubble-up-color: $grey3;
+$bubble-down-color: $grey1;
 
 
 /* font sizes */
@@ -73,6 +76,7 @@ $h5-font-size: 12px;
 $h6-font-size: 10px;
 $paragraph-font-size: 16px;
 $paragraph-font-size2: 14px;
+$paragraph-font-size3: 12px;
 $links-font-size: 16px;
 $button-font-size: 14px;
 $add-button-text-size: 18px;
@@ -97,7 +101,7 @@ $table-icon-size: 8px;
 $arial: Arial, Helvetica, sans-serif;
 $tahoma: Tahoma, Geneva, sans-serif;
 $verdana: Verdana, Geneva, sans-serif;
-$glypher: glyphterFont, sans-serif;
+$glypher: GlyphterFont, sans-serif;
 $reklamescript: ReklameScript, sans-serif;
 
 $menu-font: $verdana;

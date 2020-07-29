@@ -21,24 +21,38 @@ button {
 	}
 }
 
+.button-inactive2 {
+	background-color: $inactive-button-color-hover;
+	&:hover {
+		background-color: $inactive-button-color;
+	}
+}
+
 .button-icon {
 	font-family: $icon-font;
 	font-size: $button-font-size;
 	margin: 0;
 }
 
-.add-button {
-	width: 120px;
+.btn-button {
 	height: 35px;
 	font-size: $add-button-text-size;
 	margin: 20px 0;
 }
 
+.add-button {
+	@extend .btn-button;
+	width: 120px;
+}
+
 .save-button {
-	width: 10 0px;
-	height: 35px;
-	font-size: $add-button-text-size;
-	margin: 20px 0;
+	@extend .btn-button;
+	width: 100px;
+}
+
+.copy-button {
+	@extend .btn-button;
+	width: 180px;
 }
 
 .add-button-bottom {
@@ -48,4 +62,11 @@ button {
 .button-row {
 	display: flex;
 	justify-content: center;
+}
+
+.button-online {
+	background-color: $dot-green;
+	font-size: $paragraph-font-size3;
+	width: 60px;
+	height: 20px;
 }

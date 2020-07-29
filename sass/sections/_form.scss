@@ -37,7 +37,7 @@ textarea {
 	outline: none;
 }
 
-.newCheckbox {
+.new-checkbox {
 	margin-right: 20px;
 	height: 45px;
 	display: flex;
@@ -74,10 +74,11 @@ textarea {
 		}	
 	}
 	p {
+		min-width: 150px;
 		line-height: 45px;
 		margin-left: 45px;
 		color: $paragraph-color2;
-		font-size: $paragraph-font-size2;
+		font-size: $paragraph-font-size3;
 	}
 	a {
 		width: 1000px;
@@ -88,12 +89,20 @@ textarea {
 	}
 }
 
-.newCheckbox input[type=checkbox]:checked + label {
+.new-checkbox input[type=checkbox]:checked + label {
 	background-color: $checkbox-checked-color;
 }
 
-.newCheckbox input[type=checkbox]:checked + label:after {
+.new-checkbox input[type=checkbox]:checked + label:after {
 	opacity: 1;
+}
+
+.language {
+	background-image: url('../images/flags/en.png');
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	background-size: 25px 20px;
+	padding-left: 35px;
 }
 
 input[type=range] {

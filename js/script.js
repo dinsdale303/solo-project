@@ -85,11 +85,57 @@ var chart = new Chart(chartOne, {
 });
 
 /* range fill */
-document.getElementById("rangeInput").oninput = function() {
+document.getElementById('rangeInput').oninput = function() {
 	this.style.background = 'linear-gradient(to right, #F58220 0%, #F58220 '+ this.value/168*100 +'%, #E3E3E3 ' + this.value/168*100 + '%, #E3E3E3 100%)';
 	rangeValue.value = rangeInput.value;
 	var outputStyle = document.getElementById("rangeValue").style;
 	outputStyle.left = 'calc(' + this.value/168*100 + '% - ' + this.value/168*60 + 'px)';
 	var hoursStyle = document.getElementById("hoursPosition").style;
 	hoursStyle.left = 'calc(' + this.value/168*100 + '% - ' + (this.value/168*60-20) + 'px)'
+}
+
+/* popups */
+function closeModal() {
+	document.getElementById('overlay').classList.remove('show-popup')
+}
+document.querySelectorAll('#overlay .close-modal').forEach(function(btn) {
+	btn.addEventListener('click', function(e) {
+		e.preventDefault()
+		closeModal()
+	})
+})
+document.querySelector('#overlay').addEventListener('click', function(e) {
+	if(e.target === this) {
+		closeModal()
+	}
+})
+document.addEventListener('keyup', function(e) {
+	if(e.keyCode === 27) {
+		closeModal()
+	}
+})
+function openModal(modal) {
+	document.querySelectorAll('#overlay > *').forEach(function(modal) {
+		modal.classList.remove('show-popup')
+	})
+	document.querySelector('#overlay').classList.add('show-popup')
+	document.querySelector(modal).classList.add('show-popup')
+}
+
+/* language flag */
+function selectLang(lang) {
+	var flagTable = ["url('../images/flags/en.png')", 
+					"url('../images/flags/pl.png')", 
+					"url('../images/flags/de.png')", 
+					"url('../images/flags/fr.png')", 
+					"url('../images/flags/es.png')"];
+	var selectBox = document.getElementById(lang);
+	var selected = document.getElementById(lang).style.backgroundImage = flagTable[selectBox.selectedIndex];
+}
+
+/* change password input type */
+function passChangeType () {
+	var pass = document.getElementById('loginPass');
+	pass.value = '';
+	pass.type = 'password';
 }

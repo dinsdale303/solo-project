@@ -1,0 +1,83 @@
+.popup-add-banners {	
+	input:not([type="checkbox"]), select {
+		display: block;
+		width: 100%;
+	}
+	.row {
+		width: 100%;
+	}
+	.checkbox-list {
+		height: 400px;
+		overflow-y: auto;
+	}
+	.checkbox-row {
+		border-top: 1px solid $container-background-color;
+		border-bottom: 1px solid $container-background-color;
+	}
+	.add-banners-button-row {
+		display: flex;
+		margin: 20px 0;
+		height: 50px;
+		align-items: center;
+		input {
+			height: 35px;
+			color: $inactive-input-color;
+			margin-left: 20px;
+			width: calc(100% - 360px);
+		}
+		.save-button {
+			margin-left: 10px;
+			margin-right: 20px;
+		}
+		.copy-button {
+			margin-left: 20px;
+			margin-right: 10px;
+		}
+	}
+}
+
+@media(max-width: 767px) {
+	[class*="add-banners-"][class$="-div"] {
+		padding: 20px;
+	}
+	.add-banners-website-div {
+		border-top: 1px solid $container-background-color;
+	}
+	.new-checkbox {
+		max-width: calc(100%-20px);
+	}
+}
+
+@media(min-width: 768px) {	
+	.add-banners-scheme-div {
+		padding: 20px 10px 20px 20px;
+	}
+	.add-banners-compain-div {
+		padding: 20px 10px 20px 10px;
+	}
+	.add-banners-language-div {
+		padding: 20px 20px 20px 10px;
+	}
+	.add-banners-w-h-div {
+		padding: 20px 10px 20px 20px;
+	}
+	.add-banners-design-div {
+		padding: 20px 10px 20px 10px;
+	}
+	.add-banners-file-div {
+		padding: 20px 20px 20px 10px;
+	}
+	.add-banners-banner-div {
+		padding: 20px 20px 20px 20px;
+	}
+	.add-banners-website-div {
+		padding: 20px 20px 20px 20px;
+		border-left: 1px solid $container-background-color;
+	}
+}
+
+@media(min-width: 992px) {
+}
+
+@media(min-width: 1200px) {
+}

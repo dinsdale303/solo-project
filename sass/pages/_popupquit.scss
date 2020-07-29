@@ -1,0 +1,31 @@
+.popup-quit {
+	width: 350px;
+	min-height: 130px;
+}
+
+@media(max-width: 767px) {
+	.quit-button-row {
+		text-align: center;
+	}
+	button {
+		margin: 10px 20px;
+	}
+}
+
+@media(min-width: 768px) {	
+	.quit-button-row {
+		text-align: right;
+	}
+	.button-active {
+		margin: 20px 20px 20px 10px;
+	}
+	.button-inactive2 {
+		margin: 20px 10px 20px;
+	}
+}
+
+@media(min-width: 992px) {
+}
+
+@media(min-width: 1200px) {
+}
