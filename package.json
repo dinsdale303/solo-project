@@ -12,6 +12,7 @@
         "test:html": "html-validate *.html",
         "test:js": "eslint js/",
         "build": "npm-run-all build:* test",
+        "build:clean": "rimraf css/*.*",
         "build:sass": "node-sass --output-style compact -o css sass",
         "build:autoprefixer": "autoprefixer-cli css/style.css",
         "build-dev": "npm-run-all build-dev:sass build:autoprefixer",
@@ -24,7 +25,8 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "eslint-plugin-atom": "^0.1.4"
+        "eslint-plugin-atom": "^0.1.4",
+        "imagemin": "^7.0.1"
     },
     "devDependencies": {
         "autoprefixer-cli": "^1.0.0",
